@@ -12,4 +12,4 @@ jobs:
                 NAME: "Talha"
               run: |
                 echo "Hello World"
-                echo ${{ env.Name }}
+                echo ${{ env.NAME }}
