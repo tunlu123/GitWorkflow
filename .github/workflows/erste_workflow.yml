@@ -1,0 +1,15 @@
+name: Erste Workflow
+on:
+    push:
+        branches:
+            - production
+jobs:
+    Explore-Github-Action:
+        runs-on: ubuntu-latest
+        steps:
+            - name: First Step
+              env:
+                NAME: "Talha"
+              run: |
+                echo "Hello World"
+                echo ${{ env.Name }}
