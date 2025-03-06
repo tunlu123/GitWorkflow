@@ -1,0 +1,15 @@
+name: Zweite Workflow
+on:
+  workflow_dispatch:
+jobs:
+  Explore-Github-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 7zip
+        run: sudo apt install p7zip-full p7zip-rar
+      - name: Cloned Introduction Repo
+        run: git clone https://github.com/tunlu123/Introduction.git
+      - name: Repository komprimieren
+        run: 7z a repository.7z .
+      - name: Vorgang abschließen
+        run: echo "Vorgang abgeschlossen"
