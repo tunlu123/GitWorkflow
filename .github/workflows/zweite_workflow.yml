@@ -10,6 +10,6 @@ jobs:
       - name: Cloned Introduction Repo
         run: git clone https://github.com/tunlu123/Introduction.git
       - name: Repository komprimieren
-        run: 7z a repository.7z .
+        run: 7z a Introduction.7z .
       - name: Vorgang abschließen
         run: echo "Vorgang abgeschlossen"
